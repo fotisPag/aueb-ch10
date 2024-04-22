@@ -17,7 +17,7 @@ public class Palindrome {
         boolean isPal;
 
         try {
-            System.out.println("Δώστε μια πρόταση προς έλεγχος αν είναι παλίνδρομη");
+            System.out.println("Δώστε μια πρόταση προς έλεγχο αν είναι παλίνδρομη");
 
             do {
                 ch = (char) System.in.read();
