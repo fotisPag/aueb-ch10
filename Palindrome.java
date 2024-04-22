@@ -54,8 +54,10 @@ public class Palindrome {
         }
 
         while ((i < j) && (isPal)) {
-            if (sentence[i++] != sentence[j--])
-                isPal = false;
+//            if (sentence[i++] != sentence[j--])
+//                isPal = false;
+
+                isPal = (sentence[i++] != sentence[j--]);
         }
         return isPal;
     }
