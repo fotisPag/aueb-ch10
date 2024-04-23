@@ -5,6 +5,7 @@ package gr.aueb.cf.ch10;
 * πίνακα καλώντας την swap
 *
 * @author fotisPag
+* @see #swap(int[], int, int)
 * */
 public class ArraySwap {
 
@@ -17,6 +18,17 @@ public class ArraySwap {
             System.out.print(age + " ");
         }
     }
+
+    /*Ανταλλάσει αμοιβαία τα στοιχεία του πίνακα array
+    * στις θέσεις e1 και e2
+    *
+    * @param array ο πίνακας με στοιχεία των ακεραίων
+    * @param e1 η θέση index του 1ου στοιχείου
+    * @param e2 η θέση index του 2ου στοιχείου
+    *
+    *
+    * */
+
 
     public static void swap(int[] array, int e1, int e2){
         if ( (array == null) || ((e1 < 0) || (e1 >= array.length)) || ((e2 < 0) || (e2 >= array.length)) ) {

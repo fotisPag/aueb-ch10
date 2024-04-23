@@ -9,17 +9,19 @@ package gr.aueb.cf.ch10;
 
 public class PalindromeSB {
     StringBuilder sentence = new StringBuilder();
-    boolean isPal;
     char ch;
+    boolean isPal;
 
-        try {
+
+
+    try {
         System.out.println("Δώστε μια πρόταση προς έλεγχο αν είναι παλίνδρομη");
 
         do {
-            ch = (char) System.in.read();
-            if ((ch >= 'A') && (ch <= 'Z')){
+            ch = (char) System.in;
+            if ((ch >= 'A') && (ch <= 'Z'))
                 sentence.append(ch);
-            }
+
         } while ((ch != "."));
 
         isPal = isPalindrome(sentence);
