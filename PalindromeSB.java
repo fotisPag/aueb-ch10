@@ -14,22 +14,22 @@ public class PalindromeSB {
 
 
 
-    try {
-        System.out.println("Δώστε μια πρόταση προς έλεγχο αν είναι παλίνδρομη");
-
-        do {
-            ch = (char) System.in;
-            if ((ch >= 'A') && (ch <= 'Z'))
-                sentence.append(ch);
-
-        } while ((ch != "."));
-
-        isPal = isPalindrome(sentence);
-        System.out.printf("Η πρόταση %s είναι παλινδρομική", (isPal) ? "" : "δεν" );
-
-    } catch (java.io.IOException e) {
-        e.printStackTrace();
-    }
+//    try {
+//        System.out.println("Δώστε μια πρόταση προς έλεγχο αν είναι παλίνδρομη");
+//
+//        do {
+//            ch = (char) System.in;
+//            if ((ch >= 'A') && (ch <= 'Z'))
+//                sentence.append(ch);
+//
+//        } while ((ch != "."));
+//
+//        isPal = isPalindrome(sentence);
+//        System.out.printf("Η πρόταση %s είναι παλινδρομική", (isPal) ? "" : "δεν" );
+//
+//    } catch (java.io.IOException e) {
+//        e.printStackTrace();
+//    }
 
     /*
     * Ελέγχει αν η πρόταση sentence είναι παλινδρομική.
