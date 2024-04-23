@@ -5,9 +5,10 @@ package gr.aueb.cf.ch10;
 * στοιχείο ενός πίνακα με τη χρήση των arrayMin
 * και της swap από την κλάση ArraySwap
 *
-* @fotisPag
+* @author fotisPag
+* @see #arrayMin(int[])
+* @see ArraySwap #swap(int[], int, int)
 * */
-
 
 public class ArraySwapMin {
 
@@ -15,13 +16,14 @@ public class ArraySwapMin {
 
         int[] ages = {50, 44, 33, 25, 18};
 
-        ArraySwap.swap(ages, 0, arrayMin(ages));
+        int min = arrayMin(ages);
+        System.out.printf("Το ελάχιστο στοιχείο είναι το %d%n", ages[min], min);
 
+        System.out.printf("Ανταλλαγή 1ου στοιχείου του πίνακα με το μικρότερο");
+        ArraySwap.swap(ages, 0, arrayMin(ages));
         for (int age : ages) {
             System.out.print(age + " ");
         }
-
-
     }
 
     /*
@@ -39,5 +41,4 @@ public class ArraySwapMin {
         }
         return minPosition;
     }
-
 }
