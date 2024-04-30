@@ -12,8 +12,6 @@ public class SelectionSort {
         }
     }
 
-
-
     /*
     * Ταξινομεί τον πίνακα array με τη μέθοδο ταξινόμησης SelectionSort
     *
@@ -40,6 +38,4 @@ public class SelectionSort {
 
 
     }
-
-
 }
